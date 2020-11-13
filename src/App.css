@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(./Assets/Pizza.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar button {
+    width: 20vw;
+    border-radius: 5px;
+    height: 6vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    position: relative;
+    text-align: center;
+    padding: 10rem 0 0 0;
+}
+ 
+h1 {
+    font-size: 2.8rem;
+    margin: 1rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    font-size: 2.2rem;
+    margin: 1rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+    font-size: 2rem;
+    /* margin: 1rem 0; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+    font-size: 1.8rem;
+    margin: 4rem 0 0;
+}
+
+h6 {
+    margin: 0 0 .5rem 0 ;
+    font-size: 1.0rem;
+    font-style: italic;
+}
+
+p, li {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+input {
+    margin: 0 1.5rem;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin: 0 auto 1rem;
+}
+
+.sauce {
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    columns: 1;
+}
+
+.sauce li {
+    text-align: left;
+    width: 100%;
+    margin: 0 30%; 
+}
+
+.sauce h4, .sauce h6 {
+    text-align: center;
+}
+
+.toppings {
+    columns: 2;
+    text-align: left;
+}
+
+.toppings li{
+    margin: 0 10%;
+}
+
+.gluten, .special, .qty {
+    margin: 2rem 0;
+    display: block;
+}
+
+.toppingsDiv {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.special textarea {
+    width: 50vw;
+    height: 15vh;
+    resize: none;
+    border-radius: 3px;
+}
+
+.pizza {
+    margin: 5rem auto; 
+    border: 2px solid black;  
+    border-radius: 3px;  /*eslint-disable-next-line */
+    width: 50%;
+}
+
+submitBtn
+.errors {
+    color: red;
+    font-style: bold;
+    font-size: 2rem;
+
 }
